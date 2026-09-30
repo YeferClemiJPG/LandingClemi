@@ -1,6 +1,6 @@
 # Landing institucional CLEMI
 
-- Esta es la landing principal institucional, no el perfil de una persona. Las landings de Natalia, Silvia y Carlos se trabajarán después con sus datos y fotos.
+- Esta es la plantilla institucional. Natalia, Silvia y Carlos tienen también sus plantillas separadas publicadas; la personalización de las cuatro se hará una por una. Mantener template:true, noindex y aviso hasta completar la personalización.
 - Conservar el sistema aprobado: perla, azul marino, oro, tipografía serif, iconos, cristal y animaciones finitas. Contacto usa exactamente el fondo azul SCCOT de la Dra. Reyes.
 - Orden: Inicio, Nosotros, Contacto, Conexiones. El lema exacto aparece una sola vez en portada: Entrenamos hoy, investigamos para el mañana, transformamos vidas.
 - Logo oficial sin alteraciones y fotografía institucional real. No reutilizar retratos ni información personal de Alfredo o Claudia.

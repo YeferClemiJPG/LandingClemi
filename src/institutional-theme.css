@@ -1,4 +1,10 @@
 /* Institutional adaptation of the approved CLEMI landing system. */
+.template-notice {
+  margin: 16px 20px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
 .institutional .hero {
   grid-template-columns: 1.08fr 0.92fr;
   gap: 44px;

@@ -102,7 +102,10 @@ Object.assign(values, {
   instagramPersonalUrl: `https://www.instagram.com/${profile.instagramPersonal.toLowerCase()}/`,
   instagramPersonalHandle: `@${profile.instagramPersonal.toLowerCase()}`,
   instagramInstitutionalUrl: `https://www.instagram.com/${profile.instagramInstitutional.toLowerCase()}/`,
-  robots: profile.publicUrl ? "index, follow" : "noindex, nofollow",
+  robots:
+    !profile.template && profile.publicUrl
+      ? "index, follow"
+      : "noindex, nofollow",
   canonical: profile.publicUrl
     ? `<link rel="canonical" href="${escape(profile.publicUrl)}" />`
     : "",
