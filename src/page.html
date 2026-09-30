@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F6F5F1" />
+    <meta name="description" content="{{description}}" />
+    <meta name="robots" content="{{robots}}" />
+    {{canonical}}
+    <title>CLEMI · Entrenamiento médico e investigación</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/liquid-glass.css" />
+    <link rel="stylesheet" href="/src/editorial-banner.css" />
+    <link rel="stylesheet" href="/src/institutional-theme.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="institutional">
+    <a class="skip-link" href="#contacto">Ir al contacto</a>
+
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#perfil" aria-label="CLEMI · Inicio"
+          >{{brand}}</a
+        >
+        <nav aria-label="Navegación principal">
+          <a href="#perfil">Inicio</a>
+          <a href="#trayectoria">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero shell" id="perfil" aria-labelledby="profile-name">
+        <div class="hero-copy">
+          <h1 class="hero-name" id="profile-name">
+            <span class="title-mask"
+              ><span class="reveal" data-reveal-type="title">CLEMI</span></span
+            >
+          </h1>
+          <p class="institutional-name reveal">
+            Centro Latinoamericano de<br />Entrenamiento Médico e Investigación
+          </p>
+          <p
+            class="hero-motto reveal"
+            data-reveal-type="title"
+            data-reveal-delay="180"
+          >
+            {{mottoLines}}
+          </p>
+        </div>
+        <div
+          class="hero-visual reveal institutional-emblem"
+          data-reveal-type="portrait"
+        >
+          <div class="emblem-disc">
+            <img
+              class="hero-logo"
+              src="./{{logo}}"
+              alt="Logo oficial de CLEMI"
+              width="156"
+              height="170"
+              fetchpriority="high"
+            />
+          </div>
+          <img
+            class="hero-study reveal"
+            data-reveal-type="panel"
+            src="./{{scienceIllustration}}"
+            alt=""
+            width="1536"
+            height="1024"
+          />
+        </div>
+      </section>
+      <section
+        class="biography institutional-story shell"
+        id="trayectoria"
+        aria-labelledby="biography-title"
+      >
+        <div class="institutional-photo reveal" data-reveal-type="portrait">
+          <img
+            src="./{{institutionalPhoto}}"
+            alt="Jornada de entrenamiento médico en Fundación CLEMI"
+            width="1280"
+            height="960"
+            loading="lazy"
+          />
+        </div>
+        <div class="biography-copy">
+          <h2 class="section-label section-heading" id="biography-title">
+            <span class="title-mask"
+              ><span class="reveal" data-reveal-type="title"
+                >Nosotros</span
+              ></span
+            >
+          </h2>
+          <p class="biography-text reveal">{{biography}}</p>
+          <p class="institutional-location reveal">
+            Sopó, Cundinamarca · Colombia
+          </p>
+        </div>
+      </section>
+      <section
+        class="contact-section shell"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <img
+          class="contact-waves"
+          src="./{{contactWaves}}"
+          alt=""
+          width="1672"
+          height="941"
+          loading="lazy"
+        />
+        <h2 class="section-label section-heading" id="contact-title">
+          <span class="title-mask"
+            ><span class="reveal" data-reveal-type="title">Contacto</span></span
+          >
+        </h2>
+        <div class="contact-grid focus-group" data-focus-group>
+          <a
+            class="contact-card contact-save focus-card reveal"
+            data-interactive-surface
+            data-focus-card
+            data-reveal-type="panel"
+            href="./contacto.vcf"
+            download="{{slug}}.vcf"
+            type="text/vcard"
+            data-contact-download
+          >
+            <img
+              class="contact-art contact-art-save"
+              src="./assets/contact-save-sculpture.png"
+              alt=""
+              width="1254"
+              height="1254"
+              loading="lazy"
+            /><span class="contact-card-title">Guardar contacto</span>
+          </a>
+          <a
+            class="contact-card contact-whatsapp focus-card reveal"
+            data-interactive-surface
+            data-focus-card
+            data-reveal-type="panel"
+            data-reveal-delay="60"
+            href="{{whatsapp}}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-art-wrap contact-art-chat" aria-hidden="true"
+              ><img
+                class="contact-art"
+                src="./assets/contact-whatsapp-sculpture-v2.png"
+                alt=""
+                width="1254"
+                height="1254"
+                loading="lazy"
+              /><span class="contact-brand-mark">{{whatsappIcon}}</span></span
+            ><span class="contact-card-title">WhatsApp</span>
+          </a>
+          <div
+            class="contact-card contact-email focus-card reveal"
+            data-interactive-surface
+            data-focus-card
+            data-reveal-type="panel"
+            data-reveal-delay="120"
+          >
+            <a class="contact-email-link" href="mailto:{{email}}"
+              ><img
+                class="contact-art contact-art-mail"
+                src="./assets/contact-mail-sculpture.png"
+                alt=""
+                width="1254"
+                height="1254"
+                loading="lazy"
+              /><span
+                ><span class="contact-card-title">Correo</span
+                ><span class="contact-detail email-value"
+                  >{{emailDisplay}}</span
+                ></span
+              ></a
+            >
+            <button
+              class="copy-control"
+              type="button"
+              data-copy-email="{{email}}"
+              aria-label="Copiar correo electrónico"
+            >
+              <i data-lucide="copy" data-copy-icon></i
+              ><i data-lucide="check" data-copy-check></i
+              ><span data-copy-label>Copiar</span>
+            </button>
+          </div>
+          <a
+            class="contact-card contact-phone focus-card reveal"
+            data-interactive-surface
+            data-focus-card
+            data-reveal-type="panel"
+            data-reveal-delay="180"
+            href="tel:{{phone}}"
+          >
+            <img
+              class="contact-art contact-art-phone"
+              src="./assets/contact-phone-sculpture-v2.png"
+              alt=""
+              width="1254"
+              height="1254"
+              loading="lazy"
+            /><span class="contact-card-title">Llamar</span>
+          </a>
+        </div>
+      </section>
+      <section
+        class="connections shell"
+        id="conexiones"
+        aria-labelledby="connections-title"
+      >
+        <h2 class="section-label section-heading" id="connections-title">
+          <span class="title-mask"
+            ><span class="reveal" data-reveal-type="title"
+              >Conexiones</span
+            ></span
+          >
+        </h2>
+        <div class="connection-grid focus-group" data-focus-group>
+          <a
+            id="portafolio"
+            class="connection-tile connection-portfolio focus-card reveal"
+            data-focus-card
+            data-reveal-type="panel"
+            href="{{portfolio}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-interactive-surface
+          >
+            <img
+              class="portfolio-image"
+              src="./{{portfolioIllustration}}"
+              alt=""
+              width="1254"
+              height="1254"
+              loading="lazy"
+            />
+            <div class="tile-content"><h3>Portafolio CLEMI</h3></div>
+          </a>
+          <a
+            class="connection-tile connection-personal focus-card reveal"
+            data-focus-card
+            data-reveal-type="panel"
+            data-reveal-delay="80"
+            href="{{instagramPersonalUrl}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram de Fundación CLEMI"
+            data-interactive-surface
+          >
+            <div class="instagram-profile">{{instagramPortrait}}</div>
+            <span class="app-mark">{{instagramIcon}}</span>
+            <div class="tile-content"><h3>Instagram</h3></div>
+          </a>
+          <a
+            class="connection-tile connection-foundation focus-card reveal"
+            data-focus-card
+            data-reveal-type="panel"
+            data-reveal-delay="160"
+            href="{{website}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sitio web de Fundación CLEMI"
+            data-interactive-surface
+          >
+            <div class="foundation-art">
+              <img
+                class="foundation-photo"
+                src="./{{institutionalPhoto}}"
+                alt="Jornada de formación en Fundación CLEMI"
+                width="1280"
+                height="960"
+                loading="lazy"
+              />
+              <div class="foundation-logo" aria-hidden="true">{{cardLogo}}</div>
+            </div>
+
+            <div class="tile-content"><h3>Sitio web</h3></div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer shell">
+      <p class="institutional-footer">Fundación CLEMI</p>
+    </footer>
+    <div
+      class="toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+    <noscript
+      ><style>
+        .copy-control {
+          display: none !important;
+        }
+      </style></noscript
+    >
+  </body>
+</html>

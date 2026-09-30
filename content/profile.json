@@ -1,0 +1,41 @@
+{
+  "slug": "fundacion-clemi",
+  "honorific": "",
+  "givenName": "CLEMI",
+  "familyName": "",
+  "roles": ["Centro Latinoamericano de Entrenamiento Médico e Investigación"],
+  "organization": "Fundación Centro Latinoamericano de Entrenamiento Médico e Investigación",
+  "specialty": "Entrenamiento médico e investigación",
+  "editorialSpecialty": "Entrenamiento médico e investigación",
+  "biography": "Somos el Centro Latinoamericano de Entrenamiento Médico e Investigación: una fundación sin ánimo de lucro ubicada en Sopó, Cundinamarca, dedicada al entrenamiento médico y la investigación.",
+  "biographySources": [
+    {
+      "label": "CLEMI · Servicios",
+      "url": "https://new.clemi.edu.co/servicios/"
+    },
+    {
+      "label": "CLEMI · Contacto",
+      "url": "https://new.clemi.edu.co/contactenos/"
+    }
+  ],
+  "email": "comercial@clemi.edu.co",
+  "phone": "+573173005768",
+  "phoneDisplay": "+57 317 300 5768",
+  "instagramPersonal": "FUNDACIONCLEMI",
+  "instagramInstitutional": "FUNDACIONCLEMI",
+  "portfolio": "https://clemi.pro/portafolio",
+  "website": "https://new.clemi.edu.co/",
+  "logo": "assets/logo-clemi-oficial-sin-texto.svg",
+  "logoWidth": 156,
+  "logoHeight": 170,
+  "portrait": null,
+  "instagramPortrait": "assets/logo-clemi-oficial-sin-texto.svg",
+  "instagramPortraitWidth": 156,
+  "instagramPortraitHeight": 170,
+  "institutionalPhoto": "assets/clemi-formacion.jpeg",
+  "scienceIllustration": "assets/clemi-science-illustration.png",
+  "portfolioIllustration": "assets/clemi-portfolio-sculpture.png",
+  "contactWaves": "assets/contact-blue-waves.png",
+  "motto": "Entrenamos hoy, investigamos para el mañana, transformamos vidas",
+  "publicUrl": "https://yeferclemijpg.github.io/LandingClemi/"
+}

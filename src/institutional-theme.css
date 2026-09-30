@@ -1,0 +1,159 @@
+/* Institutional adaptation of the approved CLEMI landing system. */
+.institutional .hero {
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 44px;
+  padding-block: 45px 80px;
+}
+.institutional .hero-name {
+  font-size: clamp(5rem, 9vw, 8.5rem);
+  letter-spacing: -0.04em;
+}
+.institutional .hero-name::after {
+  display: none;
+}
+.institutional-name {
+  max-width: 34ch;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.45;
+}
+.hero-motto {
+  margin-top: 38px;
+  max-width: 26ch;
+  color: var(--accent);
+  font-size: clamp(1.75rem, 2.8vw, 2.65rem);
+  line-height: 1.27;
+  font-style: italic;
+  text-wrap: balance;
+}
+.hero-motto span {
+  display: block;
+}
+.institutional-emblem {
+  min-height: 530px;
+  margin-left: 0;
+}
+.emblem-disc {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 475px;
+  padding-bottom: 55px;
+  border: 1px solid #ffffff;
+  border-radius: 160px 24px 100px 24px;
+  background: linear-gradient(145deg, #ffffffb0, #f4efe4bd 55%, #dce5ed80);
+  box-shadow:
+    inset 0 2px 0 #ffffff,
+    0 32px 60px -40px #1a274449;
+}
+.hero-logo {
+  width: clamp(170px, 18vw, 240px);
+  height: auto;
+  filter: drop-shadow(0 16px 18px #594c3120);
+}
+.institutional .hero-study {
+  width: 77%;
+  max-width: 390px;
+  bottom: -12px;
+  left: -9%;
+}
+.institutional-story {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  padding: 32px;
+  margin-block: 0 48px;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  background: linear-gradient(135deg, #ffffffe0, #f4efe478);
+}
+.institutional-photo {
+  overflow: hidden;
+  border-radius: 24px 80px 24px 24px;
+}
+.institutional-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+}
+.institutional-story .biography-copy {
+  padding: 18px 12px 18px 0;
+}
+.institutional-location {
+  margin-top: 26px;
+  color: var(--accent);
+  font-size: 1rem;
+}
+.institutional .instagram-profile {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #fffdf6, #e8e9e2);
+}
+.institutional .instagram-profile-image {
+  width: 48%;
+  height: auto;
+  max-height: 75%;
+  object-fit: contain;
+}
+.institutional-footer {
+  color: var(--accent);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 900px) {
+  .institutional .hero {
+    gap: 26px;
+  }
+  .institutional-emblem {
+    min-height: 410px;
+  }
+  .emblem-disc {
+    min-height: 390px;
+  }
+  .institutional-story {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 25px;
+  }
+  .institutional-story .biography-copy {
+    padding: 0 8px 14px;
+  }
+}
+@media (max-width: 600px) {
+  .institutional .hero {
+    grid-template-columns: 1fr;
+    padding-block: 20px 50px;
+  }
+  .institutional .hero-copy {
+    order: -1;
+  }
+  .institutional .hero-name {
+    font-size: clamp(4.6rem, 21vw, 7rem);
+  }
+  .hero-motto {
+    margin-top: 26px;
+  }
+  .institutional-emblem {
+    min-height: 370px;
+    margin: 5px 10px 0 22px;
+  }
+  .emblem-disc {
+    min-height: 350px;
+    border-top-left-radius: 100px;
+  }
+  .hero-logo {
+    width: 170px;
+  }
+  .institutional .hero-study {
+    width: 74%;
+    left: -12%;
+  }
+  .institutional-story {
+    padding: 18px;
+    border-radius: 28px;
+  }
+}
