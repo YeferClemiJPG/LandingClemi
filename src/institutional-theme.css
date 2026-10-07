@@ -45,7 +45,7 @@
   place-items: center;
   width: 100%;
   min-height: 475px;
-  padding-bottom: 55px;
+  padding: 32px 0;
   border: 1px solid #ffffff;
   border-radius: 160px 24px 100px 24px;
   background: linear-gradient(145deg, #ffffffb0, #f4efe4bd 55%, #dce5ed80);
@@ -53,16 +53,13 @@
     inset 0 2px 0 #ffffff,
     0 32px 60px -40px #1a274449;
 }
-.hero-logo {
-  width: clamp(170px, 18vw, 240px);
-  height: auto;
-  filter: drop-shadow(0 16px 18px #594c3120);
-}
 .institutional .hero-study {
-  width: 77%;
-  max-width: 390px;
-  bottom: -12px;
-  left: -9%;
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  bottom: auto;
+  left: auto;
 }
 .institutional-story {
   display: grid;
@@ -150,13 +147,6 @@
   .emblem-disc {
     min-height: 350px;
     border-top-left-radius: 100px;
-  }
-  .hero-logo {
-    width: 170px;
-  }
-  .institutional .hero-study {
-    width: 74%;
-    left: -12%;
   }
   .institutional-story {
     padding: 18px;

@@ -9,3 +9,5 @@
 - Editar content/profile.json y src/page.html. index.html y contacto.vcf son generados. Ajustes propios en src/institutional-theme.css.
 - npm run verify y npm run export:preview antes de entregar; revisar escritorio y móvil. No afirmar importación en agenda ni lectura NFC física sin probarlas.
 - Repositorio LandingClemi, rama main, GitHub Pages. Verificar despliegue antes de afirmar publicación. Mantener los demás repositorios intactos.
+
+- Ilustración institucional vigente (7/10/2026): scienceIllustration → assets/clemi-emblema-libro.png. Logo vectorizado proporcionado por el usuario como referencia expresa para una interpretación 3D sobre un solo libro abierto; conservar forma reconocible y colores. El SVG oficial no se altera. La portada muestra esta ilustración como una sola pieza, sin el pie anatómico ni un logo grande duplicado. Procedencia y prompt en docs/ILUSTRACION_INSTITUCIONAL.md.
